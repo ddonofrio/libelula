@@ -1,0 +1,22 @@
+db-engine:
+  database-directory: ./database
+  max-disk-db-size-mb: 2048
+  max-events-in-ram: 1024
+log-policy:
+  ignored-materials:
+  ignored-players: 
+  ignored-worlds: 
+  only-modified-blocks: false
+  worldguard-regions-policy: EVER
+log-to-file:
+  signs:
+    active: true
+    ignore-empty: true
+    target-log: INTERNAL
+    external-log-filename: ./signs.log
+  chest:
+    active: true
+    target-log: INTERNAL
+    external-log-filename: ./chest.log
+discovery-item: BURNING_FURNACE
+restore-item: REDSTONE_LAMP_OFF

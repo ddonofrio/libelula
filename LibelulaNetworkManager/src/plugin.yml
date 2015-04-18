@@ -1,0 +1,111 @@
+name: LibelulaNetworkManager
+version: "2.2.5.8"
+main: me.libelula.networkmanager.Main
+description: Libelula Network Manager
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+
+commands:
+    test:
+        description: Genera un informe con el estado de salud de la red.
+        permission: lnm.admin
+        usage: /test
+        permission-message: "§1[§6Libélula§1] §4Este comando es solo para administradores."
+    sendallto:
+        description: Envía a todos los usuarios del servidor al servidor indicado.
+        permission: lnm.admin
+        usage: /sendallto
+        permission-message: "§1[§6Libélula§1] §4Este comando es solo para administradores."
+    network:
+        description: Ejecuta un comando en la red actual.
+        permission: lnm.admin
+        usage: /network [command] <parameters>
+        permission-message: "§1[§6Libélula§1] §4Este comando es solo para administradores."
+    global:
+        description: Ejecuta un comando en todos los servidores de la red.
+        permission: lnm.admin
+        usage: /network [command] <parameters>
+        permission-message: "§1[§6Libélula§1] §4Este comando es solo para administradores."
+    universo:
+        description: Te lleva al universo indicado.
+        permission: lnm.player
+        usage: /universo <Nombre del servidor>
+        aliases: [server]
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    lobby:
+        description: Te lleva al hub central
+        permission: lnm.player
+        usage: /lobby
+        aliases: [hub, olimpo]
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    ctw:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    creative:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    liderswag:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."    
+    minejump:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    minigames:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    pvp:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."
+    rol:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."        
+    skyblock:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."        
+    survival-one:
+        description: Te lleva al servidor del nombre de este comando.
+        permission: lnm.player
+        usage: /lobby
+        permission-message: "§1[§6Libélula§1] §4No tienes rango para saltar entre servidores."        
+        
+    
+permissions:        
+    lnm.*:
+        lnm.announce: true
+        lnm.admin: true
+        lnm.moderator: true
+        lnm.receive-alerts: true
+        lnm.teleport-no-delay: true
+        lnm.chat-cmds-no-delay: true
+        lnm.friendship: true
+        lnm.friendship.request: true
+        lnm.friendship.unlimited: true
+        lnm.enmity: true
+        lnm.enmity.unlimited: true
+        lnm.player: true
+        lnm.enmity: true
+        lnm.msg: true
+        lnm.staff-member: true
+        lnm.survival.allow-lava: true
+        lnm.survival.allow-tnt: true
+        lnm.survival.allow-vertical-break: true
+        lnm.survival.allow-vertical-place: true
+        lnm.prevent-moved: true
+        lnm.freechat: true
+        

@@ -1,0 +1,24 @@
+name: HiipoVsSurvival
+version: "0.0.2 Alpha"
+main: me.libelula.hiipovssurvival.Main
+description: HiipoGamer Vs Survival
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+depend: [WorldEdit]
+    
+commands:
+    setplayer:
+        description: Hace que un espectador sea jugador
+        permission: hvs.setplayer
+        usage: /setplayer [player name]
+        permission-message: You don't have <permission>
+    setspectator:
+        description: Hace que un jugador sea espectador
+        permission: hvs.setplayer
+        usage: /setplayer [player name]
+        permission-message: You don't have <permission>
+
+    hvs.*:
+        description: Da todos los permisos
+        children:
+            hvs.player: true

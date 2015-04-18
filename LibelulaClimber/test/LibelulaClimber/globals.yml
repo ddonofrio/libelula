@@ -1,0 +1,139 @@
+lobby:
+  world: world
+  X: 1000.6617270038548
+  Y: 50.0
+  Z: 1999.9254811572155
+  pitch: 3.1500542
+  yaw: -40.9469
+signs:
+  '1':
+    world: world
+    X: 1029
+    Y: 57
+    Z: 1998
+  '2':
+    world: world
+    X: 1029
+    Y: 57
+    Z: 1999
+  '3':
+    world: world
+    X: 1029
+    Y: 57
+    Z: 2000
+  '4':
+    world: world
+    X: 1029
+    Y: 57
+    Z: 2001
+  '5':
+    world: world
+    X: 1029
+    Y: 57
+    Z: 2002
+  '6':
+    world: world
+    X: 1029
+    Y: 56
+    Z: 1998
+  '7':
+    world: world
+    X: 1029
+    Y: 56
+    Z: 1999
+  '8':
+    world: world
+    X: 1029
+    Y: 56
+    Z: 2000
+  '9':
+    world: world
+    X: 1029
+    Y: 56
+    Z: 2001
+  '10':
+    world: world
+    X: 1029
+    Y: 56
+    Z: 2002
+  '11':
+    world: world
+    X: 1029
+    Y: 55
+    Z: 1998
+  '12':
+    world: world
+    X: 1029
+    Y: 55
+    Z: 1999
+  '13':
+    world: world
+    X: 1029
+    Y: 55
+    Z: 2000
+  '14':
+    world: world
+    X: 1029
+    Y: 55
+    Z: 2001
+  '15':
+    world: world
+    X: 1029
+    Y: 55
+    Z: 2002
+  '16':
+    world: world
+    X: 1029
+    Y: 54
+    Z: 1998
+  '17':
+    world: world
+    X: 1029
+    Y: 54
+    Z: 1999
+  '18':
+    world: world
+    X: 1029
+    Y: 54
+    Z: 2000
+  '19':
+    world: world
+    X: 1029
+    Y: 54
+    Z: 2001
+  '20':
+    world: world
+    X: 1029
+    Y: 54
+    Z: 2002
+startsigns:
+  '0':
+    world: world
+    X: 1008
+    Y: 52
+    Z: 2004
+  '1':
+    world: world
+    X: 1009
+    Y: 52
+    Z: 2004
+  '2':
+    world: world
+    X: 1010
+    Y: 52
+    Z: 2004
+  '3':
+    world: world
+    X: 1008
+    Y: 51
+    Z: 2004
+  '4':
+    world: world
+    X: 1009
+    Y: 51
+    Z: 2004
+  '5':
+    world: world
+    X: 1010
+    Y: 51
+    Z: 2004

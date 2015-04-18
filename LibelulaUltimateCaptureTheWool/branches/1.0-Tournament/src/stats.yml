@@ -1,0 +1,17 @@
+# Statistics configuration file
+
+enable: false
+
+database:
+    # Possible values: MySQL, SQLITE
+    type: MySQL
+    # Connection information
+    name: lctw
+    user: lctw
+    pass: libelulaPluginsRocks
+
+scores:
+    capture: 5
+    death: -1
+    kill: 1
+    

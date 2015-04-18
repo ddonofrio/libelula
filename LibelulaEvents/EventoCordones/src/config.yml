@@ -1,0 +1,16 @@
+prefix: "&1[&4Libelula Minigames&1] &e"
+spawn:
+    world: lobby
+signs:
+    first-line: "&1[&4EC&1]"
+ingame:
+    allowed-commands:
+        - spawn
+        - tell
+        - m
+        - msg
+        - t
+        - whisper
+        - w
+        - helpop
+        - report

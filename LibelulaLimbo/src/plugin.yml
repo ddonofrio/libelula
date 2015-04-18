@@ -1,0 +1,11 @@
+name: LibelulaLimbo
+version: "0.0.3 Alpha"
+main: me.libelula.limbo.Main
+description: Libelula Limbo
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+
+commands:
+    lobby:
+        description: Te lleva al lobby
+        usage: /lobby

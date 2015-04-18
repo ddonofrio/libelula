@@ -1,0 +1,25 @@
+lang-file: spanish.yml
+plugin-text-prefix: "&e[&6Libelula Lider Swag&e] "
+signs:
+    first-line-text: "[LLS]"
+    first-line-text-replacement: "&1LIBELULA&4LS"
+    on-invalid-arena-replacement: "&4INVALID ARENA"
+    on-disabled-arena: "&4DISABLED"
+    on-enabled-arena: "&aENABLED"
+ingame:
+    chat-isolation: true
+    allowed-commands:
+        - spawn
+        - tell
+        - m
+        - msg
+        - t
+        - whisper
+        - w
+        - helpop
+        - report
+        - r
+lobby:
+    imprecise-spawn:
+        active: true
+        distance: 4

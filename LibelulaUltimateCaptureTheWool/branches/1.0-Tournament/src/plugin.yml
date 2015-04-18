@@ -1,0 +1,79 @@
+name: LibelulaUltimateCaptureTheWool
+version: "1.1.0"
+main: me.libelula.capturethewool.Main
+description: Libelula Ultimate Capture The Wool
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+depend: [WorldEdit]
+softdepend: [TagAPI]
+    
+commands:
+    ctw:
+        description: Libelula Capture The Wool main command.
+        permission: ctw.admin
+        usage: /ctw [reload|save|mapcycle]
+        permission-message: You don't have <permission>
+    g:
+        description: General chat.
+        permission: ctw.generalchat
+        usage: /g [message]
+        permission-message: You don't have <permission>
+    ctwsetup:
+        description: General game configuration
+        permission: ctw.setup
+        usage: /ctwsetup [lobby|map|mapconfig]
+        permission-message: You don't have <permission>
+    gotoworld:
+        description: Navegates between Worlds
+        permission: ctw.setup
+        usage: /gotoworld [world name]
+        permission-message: You don't have <permission>
+    createworld:
+        description: Creates a new empty world and take you down there.
+        permission: ctw.setup
+        usage: /createworld [world name]
+        permission-message: You don't have <permission>    
+    join:
+        description: Manage player access to game
+        permission: ctw.join
+        usage: /join [obs|red|blue|random]
+        permission-message: You don't have <permission>
+        aliases: [entrar, unirse, ctwjoin]
+    leave:
+        description: Allows players to leave the room game and back to the lobby
+        permission: ctw.join
+        usage: /leave
+        permission-message: You don't have <permission>
+        aliases: [salir]
+    toggle:
+        description: Manage player visual options
+        permission: ctw.join
+        usage: /toggle [obs|dms|blood]
+        permission-message: You don't have <permission>
+    spawn:
+        description: Take players to spawn points.
+        usage: /spawn
+        permission-message: You don't have <permission>
+
+permissions:
+    ctw.player:
+        description: Gives access to player Capture The Wool actions
+        children:
+            ctw.generalchat: true
+            ctw.join: true
+    cts.admin:
+        description: Gives access to player admin commmands
+        children:
+            ctw.setup: true
+            ctw.receive-alerts: true
+            ctw.admin: true
+    ctw.*:
+        description: Gives access to all Capture The Wool commands
+        children:
+            ctw.choseteam: true
+            ctw.override-limit: true
+            ctw.generalchat: true
+            ctw.setup: true
+            ctw.join: true
+            ctw.admin: true
+            ctw.ingame-extra-cmds: true

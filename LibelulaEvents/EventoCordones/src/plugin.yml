@@ -1,0 +1,27 @@
+name: EventoCordones
+version: "1.1.15"
+main: me.libelula.eventocordones.Main
+description: Evento Cordones PVP
+author: Diego D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+depends: [WorldEdit, TagApi]
+
+commands:
+    arena:
+        description: Manage arena options
+        permission: ec.admin
+        usage: /arena [add|remove|load|save|min-players|max-players|spectator]
+        permission-message: You don't have <permission>
+    team:
+        description: Manage arena options
+        permission: ec.admin
+        usage: /team [add <name> <color>|remove <name>|setportal|setspawn|setkit]
+        permission-message: You don't have <permission>
+
+permissions:
+    ec.*:
+        description: Gives access to all commands
+        children:
+            ec.modify: true
+            override-limit: true
+            ec.game.*: true

@@ -1,0 +1,49 @@
+name: LibelulaProtectionBlocks
+version: "1.1.7 Release 1"
+main: me.libelula.pb.LibelulaProtectionBlocks
+description: Libelula Protection Blocks
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+depends: [WorldGuard]
+softdepends: [ProtectionStones, Vault]
+load: POSTWORLD
+website: http://libelula.me/
+commands:
+  ps:
+    description: Libelula Protection Blocks Main Command
+    usage: /ps
+    permission-message: You don't have <permission>
+    alias: [lpb]
+permissions:
+  pb.*:
+     description: Gives access to all Libelula Protection Blocks functions.
+     children:
+       pb.break.others: true
+       pb.create: true
+       pb.addmember.others: true
+       pb.reload: true
+       pb.removemember.others: true
+       pb.remove.all: true
+       pb.version: true
+       pb.unhide.force: true
+       pb.shop.create: true
+       pb.modifyflags: true
+  pb.addmember.others:
+    description: Allows player to add members to other player protection blocks.
+  pb.break.others:
+    description: Allows player to remove other player protection blocks.
+  pb.create:
+    description: Allows player to create protection blocks from a block in hand.
+  pb.removemember.others:
+    description: Allows player to remove members to other player protection blocks.
+  pb.shop.create: 
+    description: Allows player to create sign's shopb.
+    pb.version:
+    description: Allows player to see plugin Name, version and creator.
+  pb.unhide.force:
+    description: Allows player to unhide not hidden or stolen protection blocks.
+  pb.remove.all:
+    description: Allows player to remove all protection blocks from a player.
+  pb.reload:
+    description: Allows player to reload plugin configuration.
+pb.modifyflags:
+      description: Allows player to modify protection blocks flags.

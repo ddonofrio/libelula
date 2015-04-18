@@ -1,0 +1,33 @@
+## Grace Period in seconds for waiting before game starts:
+grace-period: 30
+
+# Blocks which will not drop materials (prevents target WOOL crafting).
+no-drop-on-break:
+    - DOUBLE_PLANT
+    - RED_ROSE
+    - YELLOW_FLOWER
+
+# Texts to send to all players:
+announce:
+    #  When player gets on the map. You can add lines as you whish.
+    at-begining:
+        - "&6*************************"
+        - "&6Welcome to My CTW NEW MAP"
+        - "&6*************************"
+        - "&6Use /map info for getting info about this map."
+    #  When game starts. You can add lines as you whish.
+    at-start:
+        - "&6Let's play!!!"        
+    #  When game is finished. You can add lines as you whish.
+    at-finish:
+        - "&6************************************"
+        - "&6Thank you for playing My CTW NEW MAP"
+        - "&6************************************"
+        - "&6Do you like this map? &5Use /vote for voting it."
+info:
+    #  The information about this map.
+    authors: "&6annonymous &1<annonymous@libelula.me>, &6annonymous &1<annonymous@libelula.me>"
+    description:
+        - "&eThis map was created by &6annonymous&e on 01/01/Some Year"
+        - "&It's a tiny demo map just for testing Libelula's CTW game."
+        - "&6We really appreciate you play here"

@@ -1,0 +1,153 @@
+cant-load-arena-world: "&4El mundo %WORLD% de la arena %ARENA% no puede ser cargado."
+arena-cannot-be-loaded: "&4La arena %ARENA% no puede ser cargada."
+not-in-game-cmd: "&4Este comando solo se puede ejecutar desde el juego."
+cmd-success: "&aComando ejecutado con éxito."
+invalid-arena-name: "&4Nombre de arena no válido. &6El nombre debe tener de 1 a 16 caracteres sin espacios."
+arena-already-exists: "&4Ya existe una arena con ese nombre."
+arena-dont-exists: "&4Esa arena no existe."
+we-not-enabled: "El plugin WorldEdit no está habilitado. No se puede continuar."
+area-not-selected: "&4No se ha seleccionado un área de WorldEdit."
+no-arenas: "No hay ninguna arena configurada."
+arena-list: "Existen las siguientes arenas:"
+enabled: "habilitada"
+disabled: "deshabilitada"
+misscfg-arena-area: "&4El área de la arena no está configurada."
+misscfg-colisseum-area: "&4El área del coliseo de la arena no está configurada."
+misscfg-player-kit: "&4No se ha configurado el kit de los guerreros de esta arena."
+misscfg-p1-loc: "&4No se ha configurado el punto de aparición del jugador 1."
+misscfg-p2-loc: "&4No se ha configurado el punto de aparición del jugador 2."
+misscfg-spec-loc: "&4No se ha configurado el punto de aparición de los espectadores."
+not-inside-arena-region: "&4Debes estar dentro de la región de un coliseo para poder ejecutar este comando."
+colisseum-must-be-set: "&4Se debe configurar el coliseo de esta arena antes."
+arena-not-in-colisseum: "&4El área de la arena debe estar completamente dentro del área del coliseo."
+spect-spawn-points: "Para esta arena se encuentran configurados los siguientes puntos de aparición: "
+no-spect-spawn-points: "&4No se han configurado puntos de aparición para esta arena."
+spawn-points-not-in-arena: "&4Este punto de aparición debe estar dentro del área de la arena."
+not-inside-colisseum-region: "&4Este punto de aparición debe estar dentro del coliseo pero no dentro de la arena."
+heads-setup: "Coloca cabezas dónde quieras que aparezcan cada vez que el jugador mate a alguien."
+listen-setup-finish: "Cuando termines escribe /llssetup score finish."
+score-heads-added: "&aSe ha añadido una cabeza con éxito."
+score-heads-desordered-del: "&4Las cabezas solo pueden ser eliminadas en el orden inverso al que las has puesto."
+score-heads-removed: "&aSe ha eliminado esta cabeza."
+scoreboard-title: "&cPuntuación"
+scoreboard-score: "&aPuntos:"
+scoreboard-total-score: "&aTotal:"
+arena-does-not-exists: "&4La arena no existe."
+arena-is-disabled: "&4La arena está deshabilitada."
+arena-is-full: "&4La arena está llena. No puedes entrar en este momento."
+overtaken-by-low: "&6El jugador %PLAYER%&6 se te ha adelantado por ser de más rango que tu."
+overtaken-by-normal: "&6El jugador %PLAYER%&6 se te ha adelantado por ser de más rango que tu."
+overtaken-by-high: "&6El jugador %PLAYER%&6 se te ha adelantado por ser VIP."
+overtaken-by-highest: "&6El jugador %PLAYER%&6 se te ha adelantado por tener el rango más alto."
+spectator-cant-exit: "&4No puedes salir del coliseo, si quieres dejar el juego escribe &5/llsleave"
+spectator-cant-getin-arena: "&4Espera tu turno para entrar en combate, no puedes meterte en la arena todavía."
+main-lobby-not-set: "&4El lobby principal no está configurado, el plugin no puede funcionar así. Ve dónde pondrás los carteles y escribe /llssetup lobby"
+not-in-arena-cmd: "&4Este comando solo se puede ejecutar estando en una arena."
+player-outside-arena: "&4¡Cuidado hay un fallo de configuración aquí! &6Reporta a un admin por favor."
+waiting-for-players: "&6Esperando por más jugadores para comenzar una nueva arena..."
+game-draw: "&6¡Juego empatado!"
+player-win-game: "&6El jugador %PLAYER% &6ha ganado la partida y permanece en la arena."
+lider-defeated: "&6El líder %PLAYER% &6ha sido derrotado."
+you-are-next: "¡Eres el siguiente en jugar!"
+possitions-left: "&6Estás en la fila y tienes &5%POSITION%&6 jugadores delante tuyo."
+possition-left: "&6Estás en la fila y tienes &5%POSITION%&6 jugador delante tuyo."
+time-left: "&5Tiempo restante de este combate"
+time-out: "&6¡Se ha terminado el tiempo!"
+fight: "&6¡A pelear!"
+commands:
+    llssetup:
+        description: "Configura el juego."
+        syntax: "Sintaxis: /llssetup [lobby|arena|player|score]"
+    llssetup-arena:
+        description: "Configura una arena del juego."
+        syntax: "Sintaxis: /llssetup arena [add|config|list|del|enable|disable]"
+    llssetup-arena-add:
+        description: "Añade una arena."
+        syntax: "Sintaxis: /llssetup arena add <nombre>"
+        syntax: "Ejemplo: /llssetup arena add arena1"
+    llssetup-arena-config:
+        description: "Configura una arena."
+        syntax: "Sintaxis: /llssetup arena config [colisseum|area] <nombre>"
+    llssetup-arena-config-colisseum:
+        description: "Configura el área del coliseo de una arena."
+        syntax: "Sintaxis: /llssetup arena config colisseum <nombre>"
+    llssetup-arena-config-area:
+        description: "Configura el área de una arena."
+        syntax: "Sintaxis: /llssetup arena config area"
+    llssetup-arena-list:
+        description: "Lista las arenas y su estado."
+        syntax: "Sintaxis: /llssetup arena list"
+    llssetup-arena-del:
+        description: "Borra una arena."
+        syntax: "Sintaxis: /llssetup arena del <nombre>"
+        syntax: "Ejemplo: /llssetup arena del arena1"
+    llssetup-arena-enable:
+        description: "Habilita una arena."
+        syntax: "Sintaxis: /llssetup arena enable <nombre>"
+    llssetup-arena-disable:
+        description: "Habilita una arena."
+        syntax: "Sintaxis: /llssetup arena disable <nombre>"
+    llssetup-player:
+        description: "Configura las opciones de jugador en la arena del juego."
+        syntax: "Sintaxis: /llssetup player [kit|pos1|pos2|spect]"
+    llssetup-player-kit:
+        description: "Configura el inventario tal y como lo tienes al ejecutar este comando."
+        syntax: "Sintaxis: /llssetup player kit"
+    llssetup-player-pos1:
+        description: "Configura el punto de aparición del jugador 1 en la arena."
+        syntax: "Sintaxis: /llssetup player pos1"
+    llssetup-player-pos2:
+        description: "Configura el punto de aparición del jugador 2 en la arena."
+        syntax: "Sintaxis: /llssetup player pos2"
+    llssetup-player-spect:
+        description: "Configura los puntos de aparición de los espectadores la arena."
+        syntax: "Sintaxis: /llssetup player spect [add|clear|list]"
+    llssetup-player-spect-add:
+        description: "Añade un punto de aparición para los espectadores."
+        syntax: "Sintaxis: /llssetup player spect add"
+    llssetup-player-spect-clear:
+        description: "Elimina todos los puntos de aparición de los espectadores."
+        syntax: "Sintaxis: /llssetup spect clear"
+    llssetup-player-spect-list:
+        description: "Lista los puntos de aparición de los espectadores."
+        syntax: "Sintaxis: /llssetup spect list"
+    llssetup-score:
+        description: "Configura los elementos de puntuación del juego."
+        syntax: "Sintaxis: /llssetup score [heads|signs|finish] <arena>"
+    llssetup-score-heads:
+        description: "Configura las cabezas que aparecerán cuando muera un jugador."
+        syntax: "Sintaxis: /llssetup score heads <arena>"
+    llssetup-score-signs:
+        description: "Configura el tablero de puntuación de una arena."
+        syntax: "Sintaxis: /llssetup score signs <arena>"
+    llssetup-score-finish:
+        description: "Finaliza la configuración de puntuación."
+        syntax: "Sintaxis: /llssetup score finish"
+    llssetup-lobby:
+        description: "Define la posisión del lobby."
+        syntax: "Sintaxis: /llssetup lobby"        
+death-events:
+    by-player:
+        message: "%KILLER_COLOR%%KILLER%&6 ha matado a %KILLED_COLOR%%KILLED%&6 %HOW%"
+        melee:
+            DIAMOND_SWORD: "con una filosa espada de diamantes."
+            IRON_SWORD: "a golpe de su pesada espada de hierro."
+            AIR: "con sus propias manos."
+            _OTHER_: "brutalmente."
+        range:
+            HEADSHOT: "dándole en la cabeza con una flecha (%DISTANCE% bloques)"
+            BODYSHOT: "con un flechazo (%DISTANCE% bloques)"
+    natural:
+        message: "%KILLED_COLOR%%KILLED%&6 %HOW%"
+        cause:
+            BLOCK_EXPLOSION: "ha explotado en mil pedazos."
+            CONTACT: "muere ridículamente al pincharse con un cactus."
+            DROWNING: "se ha ahogado."
+            FALL: "ha muerto al golpear el suelo muy fuerte."
+            FIRE: "se ha incinerado"
+            FIRE_TICK: "ha ardido hasta morir"
+            LAVA: "muere al tratar de nadar en lava"
+            LIGHTNING: "ha muerto partido por un rayo"
+            STARVATION: "ha muerto de hambre"
+            POISON: "ha muerto envenenado"
+            _OTHER_: "ha tenido una vergonzosa y dolorosa muerte"

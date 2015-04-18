@@ -1,0 +1,281 @@
+prefix: "&1[&6LIBELULA&1] &e"
+
+debug: true
+
+global-cmd-source: "/var/minecraft/lib/tmp/globals.cmd"
+
+# All in lowercase.
+op-players: [benjabrilnutgui, dweomers]
+
+altmenu: false
+
+player-limits:
+    max-height: 103
+    fly-blocks: 80
+    ms-between-chat: 4000
+
+map:
+    zero-point:
+            world: world
+            x: 0
+            y: 0
+            z: 0
+            yaw: 0
+            pitch: 0
+
+front-server:
+    active: false
+    lobby-server: lobby-nopremium
+    check-registered: true
+    tarpitting:
+        active: true
+        time-ms: 5000
+        penalty-seconds: 120
+        penalty-message: "¡Vas muy rápido! espera unos minutos e intenta regresar..."
+
+non-premium:
+    active: true
+    allow-premium: false
+    check-registered: false
+    unregistered-kick-message: "Debes registrarte en http://www.libelula.me para poder jugar."
+    max-players-ip-share: 4
+    max-players-exceeded-msg: "Debido a políticas del servidor no puedes ir ahora al lobby."
+    premium-kick-message: "¡Eres un usuario premium! debes entrar usando la IP: libelula.me"
+xmlrpc:
+    uri: "http://www.libelula.me/libelula-xmlrpc.php"
+    timeout-ms: 3000
+    user: libelula
+    password: anypass
+    
+rules-book:
+  author: "Libelula.ME"
+  title: "&4&oReglas de la red"
+  pages:
+    0:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "La red tiene sus propias reglas que debes respetar si quieres jugar aquí."
+        6: "Si no las sigues lo más probable es que termines siendo expulsado de forma permanente."
+    1:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "1. El uso de cualquier servidor conectado a la red libelula.me implica la aceptación de las normas."
+    2:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "2. Está prohibido el intento de suplantación de identidad de un usuario mediante la utilización de cualquier técnica: ya sea por usar nombres similares dónde se note claramente esta..."
+    3:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "... intención, el uso del comando /nick, intentar entrar con un Launcher no oficial usando el mismo minecraft id, o cualquier otra forma de uso que tenga por objetivo el confundir..."
+    4:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: " a los jugadores respecto a la identidad del jugador."
+    5:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "3. No está permitido enviar de forma general o individual mensajes no solicitados y/o no deseados, de forma repetitiva y sin importar su intervalo o periodicidad."
+    6:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "4. Es motivo de sanción el realizar pruebas de cualquier índole y sin autorización de la administración con el fin de encontrar fallos en el sistema, esta acción incluye pero no se..."
+    7:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "...limita a: Ejecutar de forma seguida comandos para los que no se tiene acceso, ejecutar repetidas veces cualquier comandos, golpear objetos en zonas que claramente..."
+    8:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "...deberían estar protegidas y no se deben modificar (spawns, shops, etc)"        
+    9:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "5. Está totalmente prohibido el aprovechamiento y/o divulgación de cualquier fallo del sistema, ya sea mediante el uso de herramientas que lo faciliten conocidas como \"hacks\"..."
+    10:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "... mala configuración de los plugins o utilizar cualquier otro tipo de fallo que permita el uso indebido de la red."
+    11:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "6. El uso de improperios, malas palabras, insultos, injurias, blasfemias o faltas de respeto hacia cualquier otro usuario conllevará sanciones, el servidor dónde este acto se..."
+    12:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "...perpetre es responsable de aplicar la sanción y asegurar que no sea repetido."
+    13:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "7. Será motivo de sanción el crear pixelarts, esculturas o cualquier tipo de elemento gráfico con contenido obsceno, connotación sexual, o impropio para un ambiente familiar..." 
+    14:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "...como es la red de Libelula.ME"
+    15:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "8. No está permitido el uso de bots, conectar cualquier aplicación a la red que no sea un cliente de Minecraft o chat, o intentar darle cualquier uso para el que no ha sido pensado."
+    16:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "9. El advertir que un jugador está cometiendo una falta y no denunciarlo a un administrador será considerado complicidad, conllevando la misma sanción."
+    17:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "10. Todo jugador se hace responsable de lo que suceda con su cuenta, incluso en el caso que esta sea robada o usada por un tercero sin autorización."
+    18:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o   Reglas generales"
+        4: "&1"
+        5: "Todo este reglamento se puede resumir en muy pocas palabras: juega limpio, se educado y respeta a los demás."
+
+help-book:
+  author: "Libelula.ME"
+  title: "&5&oRed de servidores Minecraft"
+  pages:
+    1:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Introducción"
+        4: "&1"
+        5: "Bienvenid@ a la primera red de servidores &6&lMinecraft&1 de habla hispana. Ante todo queremos que sepas que esto no es un servidor, sino la primera y más grande red de servidores..."
+    2:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Introducción"
+        4: "&1"
+        5: "... &6&lMinecraft&1 en español del mundo."
+        6: "Esta red está compuesta por muchos servidores de distintos temas a los que podrás jugar en todo momento."
+        7: "¡Ahora estás en el Lobby principal!"
+    3:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Introducción"
+        4: "&1"
+        5: "&6¡Que puedas jugar todo minecraft en un solo lugar, es lo que nos hace únicos!"
+        6: "&1Para elegir un servidor debes usar la brújula, la cual encontrarás en tu inventario."
+    4:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Introducción"
+        4: "&1"
+        5: "Si tu cuenta es Premium no hace falta que te registres, simplemente accede a la ip libelula.me y listo."
+    5:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o      Reglamento"
+        4: "&1"
+        5: "No te olvides de leer las reglas, cada uno de los servidores conectados a la red tiene las suyas y las puedes ver con el comando &5/rules"
+    6:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o       Contacto"
+        4: "&1"
+        5: "Puedes ponerte en contacto con nosotros mediante el foro: &9http://libelula.me&1 y enterarte de las últimas novedades en nuestro &3Twiter @LibelulaME"
+    7:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o       Investiga"
+        4: "&1"
+        5: "Recuerda que la red es gigante, tiene muchos servidores y se añaden cada vez más. Además hay actualizaciones semanales así que sé curioso e investiga que hay de nuevo."
+    8:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o         El staff"
+        4: "&1"
+        5: "El staff de libelula.me está compuesto por 2 tipos de administradores, los admins de los servidores y los admins de la propia red. Estos últimos cuidan del buen funcionamiento de..."
+    9:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o         El staff"
+        4: "&1"
+        5: "...la comunidad. Si tienes algún problema con un admin de un servidor te recomendamos avises a la comunidad mediante el foro."
+    10:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o ¡Pásatelo en grande!"
+        4: "&1"
+        5: "&0El staff de"
+        6: "&6LIBELULA.ME &0como así"
+        7: "también todos los que"
+        8: "trabajamos en esta"
+        9: "comunidad queremos"
+        10: "darte las gracias por"
+        11: "elegirnos."
+        12: ""
+        13: "&5&o   ¡Muchas Gracias!"
+
+beginners-book:
+  author: "Libelula.ME"
+  title: "&5&oComo empezar a jugar"
+  pages:
+    1:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Empezar a jugar"
+        4: "&1"
+        5: "Bienvenid@ a la primera red de servidores &6&lMinecraft&1 de habla hispana. Para empezar a jugar debes escribir en el chat /login seguido de tu contraseña."
+    2:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Empezar a jugar"
+        4: "&1"
+        5: "Tu contraseña es la misma que has puesto en la página &9http://www.libelula.me&1 al registrarte. Si la has olvidado puedes volver a la página y solicitar una nueva."
+    3:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o     Empezar a jugar"
+        4: "&1"
+        5: "Si no has recibido la contraseña en el correo que has puesto al registrarte, deberás reclamarla enviando un email a info@libelula.me indicando tu nombre de usuario."
+    4:
+        1: "&6&l      Libelula "
+        2: "&9  Minecraft Edition"
+        3: "&6&o ¡Pásatelo en grande!"
+        4: "&1"
+        5: "&0El staff de"
+        6: "&6LIBELULA.ME &0como así"
+        7: "también todos los que"
+        8: "trabajamos en esta"
+        9: "comunidad queremos"
+        10: "darte las gracias por"
+        11: "elegirnos."
+        12: ""
+        13: "&5&o   ¡Muchas Gracias!"

@@ -1,0 +1,53 @@
+source-uri: "http://libelula.me/net.yml"
+server-name: unconfigured
+network-name: Libelula
+debug:  true
+prefix: "&1[&6Libélula&1] &e"
+
+global-cmd-source: "/var/minecraft/lib/tmp/globals.cmd"
+global-cmd-allowed: false
+
+register-jump-cmds: true
+survival-server: false
+
+permissions:
+    delays:
+        chat:
+            lnm.chat-cmds-delay-novato: 5000
+            lnm.chat-cmds-delay-principiante: 3000
+            lnm.chat-cmds-delay-normal: 2000
+        teleport:
+            lnm.teleport-delay-novato: 5000
+            lnm.teleport-delay-principiante: 3000
+            lnm.teleport-delay-normal: 2000
+    friends:
+        lnm.friendship-principiante: 1
+        lnm.friendship-normal: 2
+        lnm.friendship-general: 3
+        lnm.friendship-veterano: 5
+    enemies:
+        lnm.enmity-normal: 1
+        lnm.enmity-general: 3
+        lnm.enmity-veterano: 5
+    promotions:
+        lnm.promote.next.principiante:
+            reputation: 11
+            command: "manuadd %PLAYER% principiante"
+        lnm.promote.next.normal:
+            reputation: 31
+            command: "manuadd %PLAYER% normal"
+        lnm.promote.next.general:
+            reputation: 61
+            command: "manuadd %PLAYER% general"
+        lnm.promote.next.veterano:
+            reputation: 91
+            command: "manuadd %PLAYER% veterano"
+        lnm.promote.next.insigne:
+            reputation: 121
+            command: "manuadd %PLAYER% insigne"
+            
+xmlrpc:
+    uri: "http://www.libelula.me/libelula-xmlrpc.php"
+    timeout-ms: 3000
+    user: libelula
+    password: anypass

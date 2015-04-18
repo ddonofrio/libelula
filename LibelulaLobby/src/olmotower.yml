@@ -1,0 +1,69 @@
+areas:
+  '0':
+    from:
+      world: world
+      x: -111
+      y: 0
+      z: -81
+      yaw: 0.0
+      pitch: 0.0
+    to:
+      world: world
+      x: -51
+      y: 255
+      z: -20
+      yaw: 0.0
+      pitch: 0.0
+win-area:
+    from:
+      world: world
+      x: -111
+      y: 208
+      z: -81
+      yaw: 0.0
+      pitch: 0.0
+    to:
+      world: world
+      x: -51
+      y: 255
+      z: -20
+      yaw: 0.0
+      pitch: 0.0
+spawn:
+    world: world
+    x: -81
+    y: 3
+    z: -19
+    yaw: 179.69987
+    pitch: -4.050055
+announce-in: "&eBienvenido a la &6&lTorre de Olmo&e. Sube a lo más alto para ganar."
+announce-out: "&eAvandonar siempre es la opción más fácil."
+announce-win: "&6¡¡¡Enhorabuena!!! Eres el ganador de &6&lTorre de Olmo&e."
+announce-win-broadcast: "&e%PLAYER%&6 es el ganador de &6&lTorre de Olmo&e."
+game-mode: SURVIVAL
+kit:
+  '0':
+    material: STICK
+    amount: 1
+    durability: 0
+  '4':
+    material: POTION
+    amount: 1
+    durability: 8230
+  '5':
+    material: POTION
+    amount: 1
+    durability: 8230
+  '6':
+    material: POTION
+    amount: 1
+    durability: 8230
+  '7':
+    material: POTION
+    amount: 1
+    durability: 8230
+  '8':
+    material: POTION
+    amount: 1
+    durability: 8230
+build: false

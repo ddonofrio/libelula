@@ -1,0 +1,9 @@
+in-game-commands:
+    - lcl
+    - m
+    - msg
+    - t
+    - tell
+    - w
+    - whisper
+command-denied-msg: '&4No está permitido dentro del juego. &6Para salir del juego escribe /lcl leave'

@@ -1,0 +1,4 @@
+PREFIX: "[LIBELULA] "
+NONPLAYER_INGAME: "Una arena solo se puede crear desde el juego."
+LOBBY_SET: "&aSe ha especificado el lobby del juego."
+CREATE_ARENA: "&6Ahora crea la arena con: /lclsetup create <nombre de la área>"

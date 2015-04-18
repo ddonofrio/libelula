@@ -1,0 +1,72 @@
+name: LibelulaLogger
+version: "1.1.2 Release"
+main: me.libelula.libelulalogger.LibelulaLogger
+description: Libelula Logger
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+softdepend: [WorldGuard, WorldEdit]
+load: POSTWORLD
+website: http://libelula.me/
+commands:
+    whomadethis:
+        description: Activates the Libelula Logger discovery tool.
+        permission: libelulalogger.whomadethis
+        usage: /whomadethis
+        permission-message: You don't have <permission>
+    blockrestore:
+        description: Activates the block restore tools.
+        permission: libelulalogger.blockrestore
+        usage: /blockrestore
+        permission-message: You don't have <permission>
+    libelulalogger:
+        description: Libelula Logger Configuration commands.
+        permission: libelulalogger.libelulalogger
+        usage: /libelulalogger <config <set [key value]> <del [key]> <reload>> <update>
+        permission-message: You don't have <permission>
+        aliases: ll
+    /whoeditedthisarea:
+        description: Query LibelulaLogger about area modifications.
+        permission: libelulalogger.whoeditedinthisarea
+        usage: //whoeditedinthisarea
+        permission-message: You don't have <permission>
+    whoeditedthisarea:
+        description: Query LibelulaLogger about area modifications.
+        permission: libelulalogger.whoeditedinthisarea
+        usage: /whoeditedinthisarea [radius]
+        permission-message: You don't have <permission>
+    /undoedited:
+        description: LibelulaLogger Undo area modifications.
+        permission: libelulalogger.undoedited
+        usage: //undoedited [player name]
+        permission-message: You don't have <permission>
+    undoedited:
+        description: LibelulaLogger Undo area modifications.
+        permission: libelulalogger.undoedited
+        usage: /undoedited [player name] [radius]
+        permission-message: You don't have <permission>
+    /redoedited:
+        description: LibelulaLogger Redo area modifications.
+        permission: libelulalogger.redoedited
+        usage: //redoedited [player name]
+        permission-message: You don't have <permission>
+    redoedited:
+        description: LibelulaLogger Redo area modifications.
+        permission: libelulalogger.redoedited
+        usage: /redoedited [player name] [radius]
+        permission-message: You don't have <permission>
+
+permissions:
+   libelulalogger.*:
+     description: Gives access to all Libelula Logger commands
+     children:
+         libelulalogger.whomadethis: true
+         libelulalogger.blockrestore: true
+         libelulalogger.libelulalogger: true
+         libelulalogger.whoeditedthisarea: true
+         libelulalogger.undoedited: true
+         libelulalogger.redoedited: true
+   libelulalogger.queries:
+     description: Gives access to all Libelula Logger query commands.
+     children:
+         libelulalogger.whomadethis: true
+         libelulalogger.whoeditedthisarea: true
+         

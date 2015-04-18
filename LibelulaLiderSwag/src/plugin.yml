@@ -1,0 +1,62 @@
+name: LibelulaLiderSwag
+version: "0.0.7 Alpha"
+main: me.libelula.liderswag.Main
+description: Libelula Lider Swag
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+depend: [WorldEdit]
+    
+commands:
+    lls:
+        description: Libelula Lider Swag main command.
+        permission: lls.admin
+        usage: /lls [reload|save]
+        permission-message: You don't have <permission>
+    llssetup:
+        description: General game configuration
+        permission: lls.setup
+        usage: /llssetup [arena|player]
+        permission-message: You don't have <permission>
+    llsjoin:
+        description: Manage player access to game
+        permission: lls.join
+        usage: /llsjoin [arena]
+        permission-message: You don't have <permission>
+        aliases: [rdlp]
+    llsleave:
+        description: Allows players to leave the game
+        permission: lls.join
+        usage: /llsleave
+        permission-message: You don't have <permission>
+    llstoggle:
+        description: Manage player visual options
+        permission: lls.join
+        usage: /llstoggle [obs|blood]
+        permission-message: You don't have <permission>
+
+permissions:
+    lls.player:
+        description: Gives player access to the game
+        children:
+            lls.join: true
+            lls.priority-normal: true
+    cts.admin:
+        description: Gives access to player admin commmands
+        children:
+            lls.setup: true
+            lls.admin: true
+            lls.priority-highest: true
+    lls.*:
+        description: Gives access to all Capture The Wool commands
+        children:
+            lls.allways-the-next: true
+            lls.jump-the-queue: true
+            lls.setup: true
+            lls.join: true
+            lls.admin: true
+            lls.ingame-extra-cmds: true
+            ls.priority-low: true
+            lls.priority-normal: true
+            lls.priority-high: true
+            lls.priority-highest: true
+            lls.intruder: true

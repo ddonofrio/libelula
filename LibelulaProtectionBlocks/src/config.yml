@@ -1,0 +1,62 @@
+# -
+# About editing this file:
+# * Don't edit this file if you aren't sure about what are you doing.
+# * Don't use tabs, this is a yaml file so you have to use spaces instead.
+# * Don't get rid of the indents. They are indented so some entries are
+#   in categories (like "configurable-flags" is in the "player" category.
+# * If you want to check the format of this file before putting it
+#   into this plugin, paste it into http://yaml-online-parser.appspot.com/
+#   and see if it gives "ERROR:".
+# * Lines starting with # are commentsand so they are ignored.
+# -
+ 
+ps-default:
+  flags:
+    greeting: "&yYou are entering into the &Y%player%'s&y protected area."
+    farewell: "&yYou are leaving the &Y%player%'s&y protected area."
+    use: deny
+player:
+  configurable-flags:
+  - build
+  - chest-access
+  - creeper-explosion
+  - enderdragon-block-damage
+  - enderman-grief
+  - enderpearl
+  - entity-item-frame-destroy
+  - entity-painting-destroy
+  - farewell
+  - fire-spread
+  - ghast-fireball
+  - grass-growth
+  - greeting
+  - ice-form
+  - ice-melt
+  - lava-fire
+  - lava-flow
+  - leaf-decay
+  - lighter
+  - lightning
+  - mob-damage
+  - mob-spawning
+  - passthrough
+  - pistons
+  - potion-splash
+  - pvp
+  - sleep
+  - snow-fall
+  - snow-melt
+  - tnt
+  - use
+  - vehicle-destroy
+  - vehicle-place
+  - water-flow
+ps-backward-compatibility:
+  imported: false
+  mode: new
+  full-y-axis: false
+  auto-hide: false
+  no-drops: false
+language: en
+ignored:
+  worlds:

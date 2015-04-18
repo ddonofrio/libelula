@@ -1,0 +1,24 @@
+red:
+    tshirt-name: "~EQUIPO ROJO~"
+    color: RED
+blue:
+    tshirt-name: "~EQUIPO AZUL~"
+    color: BLUE
+yellow:
+    tshirt-name: "~EQUIPO AMARILLO~"
+    color: YELLOW
+green:
+    tshirt-name: "~EQUIPO VERDE~"
+    color: GREEN
+black:
+    tshirt-name: "~EQUIPO NEGRO~"
+    color: BLACK
+white:
+    tshirt-name: "~EQUIPO BLANCO~"
+    color: WHITE
+magenta:
+    tshirt-name: "~EQUIPO MAGENTA~"
+    color: MAGENTA
+cyan:
+    tshirt-name: "~EQUIPO CIAN~"
+    color: CYAN

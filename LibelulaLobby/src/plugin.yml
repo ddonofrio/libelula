@@ -1,0 +1,68 @@
+name: LibelulaLobby
+version: "2.4.29 Beta"
+main: me.libelula.lobby.Main
+description: Libelula Lobby
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: http://libelula.me
+depend: [WorldEdit]
+    
+commands:
+    login:
+        description: Te permite ingresar en el juego.
+        usage: /login [contraseña]
+        permission: lobby.unlogged
+    lobby:
+        description: Te avisa que ya estás en el lobby.
+        usage: /lobby
+        permission: lobby.logged
+        alias: [hub]
+    logout:
+        description: Te saca del servidor y te solicita la clave de nuevo al entrar.
+        usage: /logout
+        alias: [logoff]
+        permission: lobby.logged
+    register:
+        description: Te explica como registrarte para poder jugar
+        usage: /register
+    changepassword:
+        description: Te explica como cambiar la contraseña.
+        usage: /changepassword
+    spawn:
+        description: Te lleva al punto de aparición en el lobby.
+        usage: /spawn
+    help:
+        description: Muestra la ayuda.
+        usage: /help
+    addspawnpoint:
+        description: Añade un punto de aparición dónde está el jugador.
+        permission: lobby.admin
+        usage: /addSpawnPoint
+    setzeropoint:
+        description: Establece el punto zero del mapa.
+        permission: lobby.admin
+        usage: /setZeroPoint
+        permission-message: No tienes <permission>
+    lobby-save:
+        description: Guarda la configuración actual.
+        permission: lobby.admin
+        usage: /save
+        permission-message: No tienes <permission>
+    definearea:
+        description: Define áreas para el lobby.
+        permission: lobby.admin
+        usage: /defineArea [silence|interact|edition]
+        permission-message: No tienes <permission>
+permissions:
+    lobby.builder:
+        description: Gives access to admin commmands.
+        children:
+            lobby.admin: true
+            lobby.verbiage: true
+    lobby.*:
+        description: Gives access to all.
+        children:
+            lobby.admin: true
+            lobby.interact: true
+            lobby.verbiage: true
+            lobby.build: true
+            lobby.move-to-anyplace: true

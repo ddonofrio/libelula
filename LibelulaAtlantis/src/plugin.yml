@@ -1,0 +1,7 @@
+name: atlantis
+version: 1.0.3
+description: Libelula Atlantis customization plugin
+load: STARTUP
+author: Diego Lucio D'Onofrio <ddonofrio@member.fsf.org>
+website: libelula.me
+main: me.libelula.atlantis.Main

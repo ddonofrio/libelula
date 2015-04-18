@@ -1,0 +1,24 @@
+lang-file: english.yml
+signs:
+    first-line-text: "ctw"
+    first-line-text-replacement: "&1LIBELULA&4CTW"
+    on-invalid-room-replacement: "&4INVALID ROOM"
+    on-invalid-map-replacement: "&4INVALID MAP"
+    on-disabled-map: "&4DISABLED"
+implement-spawn-cmd: true
+ingame:
+    allowed-commands:
+        - spawn
+        - tell
+        - m
+        - msg
+        - t
+        - whisper
+        - w
+        - helpop
+        - report
+
+message-decorator: ""
+user-fireworks-on-win: true
+keep-teams-on-win: true
+tournament-mode: false
