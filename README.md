@@ -1,7 +1,7 @@
 # libelula
 Libelula Minecraft Edition Project
 
-Más de treinta y seis mil líneas de código escritas por mi conforman este proyecto, es uno de los más grandes que he hecho y al que he dedicado casi dos años de duro trabajo.
+Más de treinta y seis mil líneas de código escritas por mí conforman este proyecto.
 
 Este código hizo funcionar el gran servidor Líbelula Minecraft, fue mi proyecto personal durante estos dos años y hoy llega a su fin. Es por eso que he decidido dejar aquí, en github.com, todo su código fuente con la esperanza de que sirva a otros.
 
